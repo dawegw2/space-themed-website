@@ -1,0 +1,132 @@
+body {
+    background-color: #191919;
+    color: white;
+}
+
+.header {
+    font-family: monospace;
+    text-align: center;
+    padding-top: 5%;
+    padding: 74px;
+    /*background-color: rgb(33, 35, 56);*/
+    text-shadow: 3px 3px 4px #000000;
+    font-size: 24px; 
+    background-image: url('/static/img/darkside.jpg'); 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.image {
+    width: 50%;
+    height: auto;
+    flex-basis: 100%;
+    padding-top: 13%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.text {
+    font-family: monospace;
+    flex-basis: 75%;
+    font-size: 18px;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.description {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.credit {
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.apod {
+    border-radius: 20px;
+}
+
+#date {
+    color: black;
+    width: 200px;
+    background-color: white;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.submit {
+    background-color: #191919; 
+    border: 2px solid #393939;
+    color: white;
+    border-radius: 5%;
+    padding: 3px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: white;
+    color: black;
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #282828;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav > a:link, nav > a:visited {
+    background-color: #282828;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+}
+  
+nav > a:hover, nav > a:active {
+    background-color: #191919;
+    color: white;
+}
+
+#web_title {
+    float: left;
+}
+
+.fa {
+    padding: 12px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 20px;
+}
+  
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-reddit {
+    background: white;
+    color: #292929;
+}
+
+.reddit {
+    font-size: 10px;
+}
+

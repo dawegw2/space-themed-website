@@ -1,0 +1,146 @@
+body {
+    background-color: #191919;
+    color: white;
+    font-family: monospace;
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #282828;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav > a:link, nav > a:visited {
+    background-color: #282828;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+}
+  
+nav > a:hover, nav > a:active {
+    background-color: #191919;
+    color: white;
+}
+
+#web_title {
+    float: left;
+}
+
+.header {
+    font-family: monospace;
+    text-align: center;
+    padding-top: 5%;
+
+    padding: 74px;
+    background-image: url('/static/img/solarsystem.png');
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    font-size: 24px; 
+    text-shadow: 3px 3px 4px #000000;
+}
+
+.arexample {
+    float: left;
+    width: 300px;
+    height: auto;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    padding-right: 5%;
+}
+
+.section1 {
+    margin-bottom: 10%;
+}
+
+.desc-container {
+    padding-top: 15%;;
+}
+
+.ar:link, .ar:visited {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    border: 2px solid white;
+    padding: 9px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+  
+.ar:hover, .ar:active {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: 2px solid white;
+}
+
+.section2 {
+    margin-top: 5%;
+}
+
+.section3 {
+    margin-top: 10%;
+    display: flex;
+}
+
+.container {
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    padding-right: 5%;
+}
+
+.marker {
+    /*display: inline-block;*/
+    width: 250px;
+    height: auto;
+    float: right;
+    padding-right: 5%;
+    padding-top: 6%;
+    /*padding-right: 5%;*/
+}
+
+.qr {
+    /*display: inline-block;*/
+    width: 150px;
+    height: auto;
+    /*float: left;*/
+    padding-right: 5%;
+    padding-top: 6%;
+}
+
+.codes {
+    padding: 50px;
+}
+
+/*div {
+    text-align: center;
+}*/
+
+p {
+    font-size: 18px;
+}
+
+.button {
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: white;
+    background-color: #282828;
+    outline: 2px solid white;
+    padding: 9px 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+
+}
+
+.button:hover {
+    background-color: #191919;
+}
+
+

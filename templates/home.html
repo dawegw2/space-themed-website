@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<script type="text/javascript" src="{{url_for('static', filename='script.js')}}"></script>
+
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='home.css') }}">
+		<title> Into Space </title>
+	</head>
+
+	<body>
+		<div>
+			<h1 class="title">INTO SPACE</h1>	
+		</div>
+		<div class="apod">
+			<p>Visit the APOD page</p>
+			<a class="redirect" href="{{ url_for('apod') }}">APOD</a>
+		</div>
+		<div class="ar">
+			<p>Solar System in AR</p>
+			<a class="redirect"  href="{{ url_for('ar') }}">Go to AR</a>
+		</div>
+	
+	</body>
+</html>
