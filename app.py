@@ -7,8 +7,8 @@ app = Flask(__name__)
 keys = []
 
 @app.route("/")
-def home():
-    return render_template("home.html")
+def index():
+    return render_template("index.html")
 
 @app.route("/apod", methods=["POST", "GET"])
 def apod():
@@ -59,7 +59,7 @@ def apod():
     image_credit = credit
 
     # Render HTML with count variable
-    return render_template("index.html", title=title, description=apod_explanation, credit=image_credit, url=apod_url)
+    return render_template("apod.html", title=title, description=apod_explanation, credit=image_credit, url=apod_url)
 
 @app.route("/ar")
 def ar():

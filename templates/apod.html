@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<script type="text/javascript" src="{{url_for('static', filename='script.js')}}"></script>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='apod.css') }}">
+		<title> About Space </title>
+	</head>
+
+	<body>
+		<nav class="navigation">
+			<a id = 'web_title'href="{{ url_for('index') }}">Into Space</a> 
+			<a href="{{ url_for('ar') }}">AR Solar System</a> 
+			<a href="{{ url_for('apod') }}">APOD</a> 
+			<a href="{{ url_for('index') }}">Home</a> 
+		</nav>
+
+		<div class="header">
+			<h1>Nasa's Astronomy Picture of the Day</h1>
+		</div>
+        
+		<div class="container">
+			<div class="text">
+				<h2>{{ title }}</h2>
+				<h3>{{ credit }}</h3>
+				<p class='description'>{{ description }}</p>
+		
+				{% block div %}
+				<h1></h1>
+				{% if error %}
+					<p class=error><strong>Error:</strong> {{ error }}
+				{% endif %}
+				<form action="/apod" method=post>
+					<label for="date">Enter Date:</label>
+					<input type="date" id="date" name="date">
+					<input class='submit' type="submit">
+				</form>
+				{% endblock %}
+				<br>
+				<p class="reddit"><a href="https://www.reddit.com/r/daily_apod/" class="fa fa-reddit"></a> visit r/daily_apod for daily apod updates</p>
+			</div>
+			
+			<div class="image">
+				<img class = 'apod' src='{{ url }}' alt="apod image">
+				<p class='credit'>This page uses the <a href="https://github.com/nasa/apod-api">NASA APOD API</a> to provide you with NASA's APOD image of the day.</p>
+			</div>
+		</div>
+
+		<footer>
+			
+		</footer>
+
+
+
+	</body>
+</html>
