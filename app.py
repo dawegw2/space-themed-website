@@ -6,7 +6,7 @@ import nasapy
 app = Flask(__name__)
 keys = []
 
-@app.route("/", methods=["POST", "GET"])
+@app.route("/")
 def home():
     return render_template("home.html")
 
@@ -61,7 +61,7 @@ def apod():
     # Render HTML with count variable
     return render_template("index.html", title=title, description=apod_explanation, credit=image_credit, url=apod_url)
 
-@app.route("/ar", methods=["POST", "GET"])
+@app.route("/ar")
 def ar():
     return render_template("ar.html")
 
