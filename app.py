@@ -6,7 +6,7 @@ import nasapy
 app = Flask(__name__)
 keys = []
 
-@app.route("/home", methods=["POST", "GET"])
+@app.route("/", methods=["POST", "GET"])
 def home():
     return render_template("home.html")
 
