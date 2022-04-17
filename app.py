@@ -12,12 +12,8 @@ def index():
 
 @app.route("/apod", methods=["POST", "GET"])
 def apod():
-    with open('keys.txt', 'r') as f:  
-        for line in f:
-            keys.append(line.strip())
-
     #NASA api key and url
-    nasa_api_key = keys[0]
+    nasa_api_key = 't5Ojuvn0NJafeMwdtjaXPOewyVIYpiw0apWkZTaf'
     url = f"https://api.nasa.gov/planetary/apod?api_key={nasa_api_key}"
 
     response = requests.get(url)
@@ -64,7 +60,6 @@ def apod():
 @app.route("/ar")
 def ar():
     return render_template("ar.html")
-
 
 if __name__ == "__main__":
     app.run()
